@@ -477,6 +477,42 @@ body#team main .team li:first-of-type {
     margin-bottom: 7px;
 }
 
+.footer-container {
+    background-color: #0B0B0B;
+    height: 80px;
+    color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-container p {
+    width: 215px;
+    text-transform: capitalize;
+    padding: 30px 10px;
+}
+
+.footer-container p span a {
+    color: #fab702;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.footer-container div.social {
+    width: 100px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.social a {
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+}
+
+
 
 
 
@@ -518,6 +554,44 @@ body#contact {
     background-size: cover;
     background-color: grey;
 }
+
+.footer-container {
+    background-color: #0B0B0B;
+    height: 80px;
+    color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-container p {
+    width: 215px;
+    text-transform: capitalize;
+    padding: 30px 10px;
+}
+
+.footer-container p span a {
+    color: #fab702;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.footer-container div.social {
+    width: 100px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.social a {
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+}
+
+
+
 
 
 
