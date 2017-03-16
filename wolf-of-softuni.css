@@ -93,10 +93,11 @@
 
 
 .wolf-advice h2 {
-    font-size: 32px;
+    font-size: 30px;
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;
+    letter-spacing: 2px;
     font-weight: 500;
     padding-bottom: 40px;
 }
@@ -414,7 +415,7 @@ section.partners img {
 /*Team-Page*/
 
 body#team {
-    font-family: Raleway, Open Sans, sans-serif;
+    font-family: Raleway, 'Open Sans', sans-serif;
 }
 
 #team-header nav {
