@@ -10,7 +10,7 @@
 /*Home-Page*/
 
 #home {
-    font-family: Raleway, Open Sans, sans-serif;
+    font-family: Raleway, 'Open Sans', sans-serif;
 }
 
 #home-header {
@@ -128,15 +128,44 @@
 
 
 .wolf-advice p {
-    width: 320px;
+    width: 300px;
     background: rgba(4, 4, 4, 0.91);
     display: inline-block;
-    padding: 35px;
+    padding: 70px 40px;
     font-weight: 500;
     text-align: left;
     color: #ffffff;
     line-height: 26px;
     font-size: 16px;
+    position: relative;
+}
+
+
+.wolf-advice p::before {
+    font-family: FontAwesome, sans-serif;
+    content: "\f10d";
+    color: #111;
+    font-size: 20px;
+    display: inline-block;
+    padding: 7px 18px;
+    background: #fab702;
+    position: absolute;
+    left: 7px;
+    top: 15px;
+}
+
+
+.wolf-advice p::after {
+    font-family: FontAwesome, sans-serif;
+    content: "\f10e";
+    color: #111;
+    font-size: 20px;
+    display: inline-block;
+    padding: 7px 18px;
+    background: #fab702;
+    position: absolute;
+    right: 7px;
+    bottom: 15px;
 }
 
 
@@ -188,11 +217,11 @@
 
 
 .judge h2 {
-    font-size: 32px;
-    color: #ffffff;
-    text-align: center;
     text-transform: uppercase;
-    font-weight: 500;
+    font-size: 30px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-align: center;
     padding-bottom: 40px;
     text-shadow: 2px 1px 1px #2a282b;
 }
@@ -412,16 +441,43 @@ body#team {
     text-decoration: none;
 }
 
+
+
 body#team main {
-    background: url("images/team-nakov.jpg");
-    background-size: cover;
-    height: 600px;
+    background: #FAB702;
+    height: 510px;
 }
 
-body#team main div {
-    background: #FAB702;
-    width: 300px;
+
+body#team main .img-container, body#team main .team {
+    display: inline-block;
+    vertical-align: middle;
 }
+
+
+body#team main .img-container img {
+    max-width: 100%;
+    min-width: 350px;
+}
+
+
+body#team main .team {
+    list-style-type: none;
+    margin-left: 15px;
+}
+
+
+body#team main .team li {
+    margin-bottom: 3px;
+}
+
+
+body#team main .team li:first-of-type {
+    margin-bottom: 7px;
+}
+
+
+
 
 
 
