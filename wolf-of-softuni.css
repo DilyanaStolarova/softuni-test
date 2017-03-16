@@ -1,6 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body{
+    font-size: 13px;
+}
 
 * {
     margin: 0;
@@ -14,14 +18,50 @@
 }
 
 #home-header {
-    background: url("images/Nakov-Wolf.jpg");
+    background: url("Images/Nakov-Wolf.jpg") no-repeat top;
     background-size: cover;
-    height: 600px;
+    width: 100%;
+    height: 1000px;
 }
 
-#home-header h3, #home-header h1 {
-    color: white;
+#home-header nav{
+    padding: 10px;
 }
+
+#home-header img{
+    margin-left: 20px;
+
+}
+
+#home-header .slider{
+    background-color: rgba(250, 183, 2, 0.76);
+    padding: 18px;
+    width: 550px;
+    height: 250px;
+    text-align: center;
+    margin: 550px auto 0;
+
+}
+
+
+#home-header h1{
+    color:  #18191b;
+    font-size: 2.3em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+
+#home-header h3 {
+    font-size: 3.8em;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #18191b;
+    text-transform: uppercase;
+}
+
 
 #home-header nav {
     background-color: #18191b;
@@ -37,10 +77,15 @@
     justify-content: flex-end;
     list-style: none;
     flex-wrap: wrap;
+    margin-right: 90px;
 }
 
 #home-header nav ul li {
-    padding-left: 10px;
+    padding: 25px 0 20px 20px;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
 }
 
 #home-header nav ul li a {
@@ -48,6 +93,34 @@
     text-decoration: none;
 }
 
+#home-header button{
+    background: none;
+    outline: none;
+    border: 3px solid #18191b;
+   padding: 15px 40px;
+
+}
+
+#home-header button a{
+    text-decoration: none;
+    color: #18191b;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 900;
+    outline: none;
+    border: none;
+    letter-spacing: 3px;
+}
+
+#home-header button:hover{
+    background-color: #18191b;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#home-header button:hover a{
+    color: #ffffff;
+}
 .about {
     text-align: center;
 }
@@ -106,7 +179,12 @@
     position: relative;
 }
 
-.wolf-advice .separator span::before {
+.fa-money:before{
+    font-size: 2.5em;
+    vertical-align: middle;
+}
+.wolf-advice .separator span::before,
+.wolf-advice .separator span::after {
     content: "";
     position: absolute;
     border-bottom: 1px solid black;
@@ -117,11 +195,6 @@
 }
 
 .wolf-advice .separator span::after {
-    content: "";
-    position: absolute;
-    border-bottom: 1px solid black;
-    top: 5px;
-    width: 300px;
     left: 100%;
     margin-left: 15px;
 }
@@ -153,16 +226,17 @@
 .call-him {
     display: block;
     background-color: transparent;
-    border: 1px solid #222222;
-    width: 240px;
+    border: 3px solid #222222;
+    width: 260px;
     cursor: pointer;
     margin: auto;
     color: #222222;
-    font-weight: 600;
+    font-size: 1.2em;
+    font-weight: 900;
+    letter-spacing: 3px;
     text-transform: uppercase;
     padding: 20px 10px;
     text-decoration: none;
-    font-size: 14px;
     text-align: center;
 }
 
