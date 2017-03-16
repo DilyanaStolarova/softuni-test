@@ -14,7 +14,7 @@ body{
 /*Home-Page*/
 
 #home {
-    font-family: Raleway, Open Sans, sans-serif;
+    font-family: 'Raleway', 'Open Sans', sans-serif;
 }
 
 #home-header {
@@ -89,7 +89,7 @@ body{
 }
 
 #home-header nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -166,10 +166,11 @@ body{
 
 
 .wolf-advice h2 {
-    font-size: 32px;
+    font-size: 30px;
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;
+    letter-spacing: 2px;
     font-weight: 500;
     padding-bottom: 40px;
 }
@@ -201,15 +202,44 @@ body{
 
 
 .wolf-advice p {
-    width: 320px;
+    width: 300px;
     background: rgba(4, 4, 4, 0.91);
     display: inline-block;
-    padding: 35px;
+    padding: 70px 40px;
     font-weight: 500;
     text-align: left;
     color: #ffffff;
     line-height: 26px;
     font-size: 16px;
+    position: relative;
+}
+
+
+.wolf-advice p::before {
+    font-family: 'FontAwesome', sans-serif;
+    content: "\f10d";
+    color: #111;
+    font-size: 20px;
+    display: inline-block;
+    padding: 7px 18px;
+    background: #fab702;
+    position: absolute;
+    left: 7px;
+    top: 15px;
+}
+
+
+.wolf-advice p::after {
+    font-family: 'FontAwesome', sans-serif;
+    content: "\f10e";
+    color: #111;
+    font-size: 20px;
+    display: inline-block;
+    padding: 7px 18px;
+    background: #fab702;
+    position: absolute;
+    right: 7px;
+    bottom: 15px;
 }
 
 
@@ -236,13 +266,14 @@ body{
     letter-spacing: 3px;
     text-transform: uppercase;
     padding: 20px 10px;
+    letter-spacing: 3px;
     text-decoration: none;
     text-align: center;
 }
 
 .call-him:hover {
     background-color: #222222;
-    color: white;
+    color: #fff;
 }
 
 .fa-chevron-right {
@@ -262,11 +293,11 @@ body{
 
 
 .judge h2 {
-    font-size: 32px;
-    color: #ffffff;
-    text-align: center;
     text-transform: uppercase;
-    font-weight: 500;
+    font-size: 30px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-align: center;
     padding-bottom: 40px;
     text-shadow: 2px 1px 1px #2a282b;
 }
@@ -363,6 +394,10 @@ section.fun-facts h2 {
     font-size: 30px;
 }
 
+.fa-money {
+    font-size: 22px;
+}
+
 section.fun-facts ul {
     list-style: none;
     padding: 20px;
@@ -451,6 +486,10 @@ section.partners img {
     padding-left: 10px;
 }
 
+.social a:hover {
+    color: #FAB702;
+}
+
 
 
 
@@ -459,7 +498,7 @@ section.partners img {
 /*Team-Page*/
 
 body#team {
-    font-family: Raleway, Open Sans, sans-serif;
+    font-family: 'Raleway', 'Open Sans', sans-serif;
 }
 
 #team-header nav {
@@ -486,16 +525,83 @@ body#team {
     text-decoration: none;
 }
 
+
+
 body#team main {
-    background: url("images/team-nakov.jpg");
-    background-size: cover;
-    height: 600px;
+    background: #FAB702;
+    height: 510px;
 }
 
-body#team main div {
-    background: #FAB702;
-    width: 300px;
+
+body#team main .img-container, body#team main .team {
+    display: inline-block;
+    vertical-align: middle;
 }
+
+
+body#team main .img-container img {
+    max-width: 100%;
+    min-width: 350px;
+}
+
+
+body#team main .team {
+    list-style-type: none;
+    margin-left: 15px;
+}
+
+
+body#team main .team li {
+    margin-bottom: 3px;
+}
+
+
+body#team main .team li:first-of-type {
+    margin-bottom: 7px;
+}
+
+.footer-container {
+    background-color: #0B0B0B;
+    height: 80px;
+    color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-container p {
+    width: 215px;
+    text-transform: capitalize;
+    padding: 30px 10px;
+}
+
+.footer-container p span a {
+    color: #fab702;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.footer-container div.social {
+    width: 100px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.social a {
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+}
+
+.social a:hover {
+    color: #FAB702;
+}
+
+
+
+
 
 
 
@@ -503,7 +609,7 @@ body#team main div {
 /*Contact-Page*/
 
 body#contact {
-    font-family: Raleway, Open Sans, sans-serif;
+    font-family: 'Raleway', 'Open Sans', sans-serif;
 }
 
 #contact-header nav {
@@ -535,6 +641,48 @@ body#contact {
     background-size: cover;
     background-color: grey;
 }
+
+.footer-container {
+    background-color: #0B0B0B;
+    height: 80px;
+    color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-container p {
+    width: 215px;
+    text-transform: capitalize;
+    padding: 30px 10px;
+}
+
+.footer-container p span a {
+    color: #fab702;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.footer-container div.social {
+    width: 100px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.social a {
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+}
+
+.social a:hover {
+    color: #FAB702;
+}
+
+
+
 
 
 
