@@ -171,7 +171,6 @@ body{
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight: 500;
     padding-bottom: 40px;
 }
 
@@ -527,27 +526,45 @@ body#team {
 
 
 
+
+
 body#team main {
-    background: #FAB702;
-    height: 510px;
+    background: #fab702;
 }
 
 
-body#team main .img-container, body#team main .team {
-    display: inline-block;
-    vertical-align: middle;
+body#team main img {
+    float: left;
+    width: 70%;
+}
+
+body#team main .text-container {
+    float: right;
+    width: calc(30% - 40px);
+    margin: 40px 20px;
 }
 
 
-body#team main .img-container img {
-    max-width: 100%;
-    min-width: 350px;
+body#team main::after {
+    clear: both;
+    display: block;
+    content: "";
+    height: 0;
+}
+
+
+body#team main .text-container .motto {
+    margin-top: 30px;
+    background: #0B0B0B;
+    color: #fab702;
+    padding: 5px 15px;
+    font-style: italic;
 }
 
 
 body#team main .team {
     list-style-type: none;
-    margin-left: 15px;
+
 }
 
 
@@ -557,8 +574,45 @@ body#team main .team li {
 
 
 body#team main .team li:first-of-type {
-    margin-bottom: 7px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+
 }
+
+
+body#team main .team li:nth-of-type(2),
+body#team main .team li:nth-of-type(3),
+body#team main .team li:nth-of-type(4){
+    margin-left: 15px;
+}
+
+
+
+@media screen and (max-width: 690px) {
+    body#team main img {
+        width: 100%;
+    }
+
+    body#team main .text-container {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    body#team main .text-container .team {
+        margin: 0 20px;
+    }
+
+    body#team main .text-container .motto {
+        margin: 20px;
+
+    }
+}
+
+
+
+
+
 
 .footer-container {
     background-color: #0B0B0B;
