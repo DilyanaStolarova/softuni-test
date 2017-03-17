@@ -542,6 +542,7 @@ body#team main .text-container {
     float: right;
     width: calc(30% - 40px);
     margin: 40px 20px;
+    font-size: 17px;
 }
 
 
