@@ -587,7 +587,6 @@ body#team {
 
 
 
-
 body#team main {
     background: #fab702;
 }
@@ -598,11 +597,12 @@ body#team main img {
     width: 70%;
 }
 
+
 body#team main .text-container {
     float: right;
     width: calc(30% - 40px);
     margin: 40px 20px;
-    font-size: 17px;
+    font-size: 1.3em;
 }
 
 
@@ -614,63 +614,67 @@ body#team main::after {
 }
 
 
-body#team main .text-container .motto {
-    margin-top: 30px;
-    background: #0B0B0B;
-    color: #fab702;
-    padding: 5px 15px;
-    font-style: italic;
+
+body#team main .team h4 {
+    margin-bottom: 15px;
+    text-transform: uppercase;
 }
 
 
-body#team main .team {
+
+body#team main .team ul {
     list-style-type: none;
-
+    margin-left: 10px;
 }
 
 
-body#team main .team li {
+body#team main .team ul li {
     margin-bottom: 3px;
 }
 
 
-body#team main .team li:first-of-type {
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    font-weight: bold;
-
-}
-
-
-body#team main .team li:nth-of-type(2),
-body#team main .team li:nth-of-type(3),
-body#team main .team li:nth-of-type(4){
-    margin-left: 15px;
+body#team main .text-container .motto {
+    margin-top: 30px;
+    font-style: italic;
+    text-align: center;
 }
 
 
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 1024px) {
     body#team main img {
+        float: none;
         width: 100%;
     }
 
     body#team main .text-container {
+        float: none;
         width: 100%;
-        margin: 20px auto;
-    }
-
-    body#team main .text-container .team {
-        margin: 0 20px;
-    }
-
-    body#team main .text-container .motto {
-        margin: 20px;
-
+        margin: 15px 0 0;
+        padding-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 }
 
 
+@media screen and (max-width: 640px) {
+    body#team main .text-container {
+        font-size: 1.2em;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    body#team main .team h4 {
+        text-align: center;
+    }
+    
+    body#team main .team li {
+        display: inline-block;
+    }
+}
 
 
 
