@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-body{
+body {
     font-size: 13px;
 }
 
@@ -154,9 +154,16 @@ div.contanier-slider{
     letter-spacing: 2px;
 }
 
+
+
+.separator {
+    margin: 17px 0 35px 0;
+}
+
 .separator span {
     position: relative;
 }
+
 
 .separator span::before {
     content: "";
@@ -168,6 +175,7 @@ div.contanier-slider{
     margin-right: 15px;
 }
 
+
 .separator span::after {
     content: "";
     position: absolute;
@@ -177,6 +185,15 @@ div.contanier-slider{
     left: 100%;
     margin-left: 15px;
 }
+
+
+.separator span .fa-money {
+    font-size: 3em;
+    vertical-align: middle;
+    color: #fff;
+}
+
+
 
 .his-story-container{
     margin: 0 auto;
@@ -216,62 +233,33 @@ div.contanier-slider{
 
 .wolf-advice {
     background: #222327;
-    padding: 60px 0 40px;
+    padding: 100px 0 120px;
     text-align: center;
 }
 
 
 .wolf-advice h2 {
-    font-size: 30px;
-    color: #dcdfe3;
+    font-size: 2.3em;
+    color: #fff;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
- .separator{
-    margin: 30px 0 30px 0;
-}
-
-.wolf-advice .separator span {
-    position: relative;
-    color: #dcdfe3;
-}
-
-.fa-money:before{
-    font-size: 2em;
-    vertical-align: middle;
-    color: #dcdfe3;
-}
-.wolf-advice .separator span::before,
-.wolf-advice .separator span::after {
-    content: "";
-    position: absolute;
-    border-bottom: 1px solid black;
-    top: 5px;
-    right: 100%;
-    width: 300px;
-    margin-right: 15px;
-    background-color: #dcdfe3;
-}
-
-.wolf-advice .separator span::after {
-    left: 100%;
-    margin-left: 15px;
-}
 
 
 .wolf-advice p {
-    width: 300px;
+    width: 350px;
     background: rgba(4, 4, 4, 0.91);
     display: inline-block;
-    padding: 70px 40px;
-    font-weight: 500;
+    padding: 70px 50px;
+    font-weight: 700;
     text-align: left;
-    color: #dcdfe3;
+    color: #fff;
     line-height: 26px;
-    font-size: 16px;
+    font-size: 1.4em;
     position: relative;
+    margin-top: 50px;
 }
 
 
@@ -279,13 +267,13 @@ div.contanier-slider{
     font-family: 'FontAwesome', sans-serif;
     content: "\f10d";
     color: #111;
-    font-size: 20px;
+    font-size: 1.5em;
     display: inline-block;
     padding: 7px 18px;
     background: #fab702;
     position: absolute;
     left: 7px;
-    top: 15px;
+    top: 13px;
 }
 
 
@@ -293,14 +281,58 @@ div.contanier-slider{
     font-family: 'FontAwesome', sans-serif;
     content: "\f10e";
     color: #111;
-    font-size: 20px;
+    font-size: 1.5em;
     display: inline-block;
     padding: 7px 18px;
     background: #fab702;
     position: absolute;
     right: 7px;
-    bottom: 15px;
+    bottom: 13px;
 }
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    .wolf-advice {
+        padding: 50px 0 60px;
+
+    }
+    .wolf-advice p {
+        width: 85%;
+        box-sizing: border-box;
+        padding: 60px 30px;
+        font-size: 1.2em;
+        margin-top: 0;
+    }
+
+    .wolf-advice h2 {
+        font-size: 2em;
+    }
+
+    .wolf-advice p::before {
+        padding: 4px 15px;
+        font-size: 1.3em;
+    }
+
+    .wolf-advice p::after {
+        padding: 4px 15px;
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .wolf-advice h2 {
+        font-size: 1.6em;
+    }
+    .wolf-advice p {
+        font-size: 1.1em;
+    }
+}
+
+
+
 
 
 /***********************Section Call Him ***********************/
@@ -326,7 +358,6 @@ div.contanier-slider{
     letter-spacing: 3px;
     text-transform: uppercase;
     padding: 20px 10px;
-    letter-spacing: 3px;
     text-decoration: none;
     text-align: center;
 }
@@ -345,21 +376,22 @@ div.contanier-slider{
 /*Section Judge*/
 
 .judge {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('Images/judge-main.jpg') no-repeat center;
+    background: url('Images/judge-main.jpg') no-repeat center;
     background-size: cover;
-    padding: 40px 0 20px;
+    padding: 80px 0;
     text-align: center;
 }
 
 
 .judge h2 {
     text-transform: uppercase;
-    font-size: 30px;
-    color: #dcdfe3;
+    font-size: 2.3em;
+    color: #fff;
     letter-spacing: 2px;
     text-align: center;
     text-shadow: 2px 1px 1px #2a282b;
 }
+
 
 
 .judge .separator span {
@@ -367,10 +399,15 @@ div.contanier-slider{
 }
 
 
+.judge .separator span .fa-money {
+    text-shadow: 2px 1px 1px #2a282b;
+
+}
+
 .judge .separator span::before {
     content: "";
     position: absolute;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     top: 5px;
     right: 100%;
     width: 300px;
@@ -381,12 +418,13 @@ div.contanier-slider{
 .judge .separator span::after {
     content: "";
     position: absolute;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     top: 5px;
     width: 300px;
     left: 100%;
     margin-left: 15px;
 }
+
 
 
 .judge .flex {
@@ -411,8 +449,8 @@ div.contanier-slider{
 }
 
 
-.judge .flex .judge-info:hover a{
-    color: #dcdfe3;
+.judge .flex .judge-info:hover a {
+    color: #fff;
 }
 
 
@@ -430,41 +468,33 @@ div.contanier-slider{
 }
 
 
-
+.judge .flex .judge-info a:hover {
+    cursor: default;
+}
 
 
 /************************Section Fun Facts ************************/
 
-section.fun-facts {
+.fun-facts {
     width: 100%;
-    height: 400px;
     background-color: #18191B;
     color: white;
     text-align: center;
+    padding: 80px 0;
 }
 
 section.fun-facts h2 {
-    display: block;
     margin: auto;
     text-transform: uppercase;
-    padding-top: 40px;
-    padding-bottom: 30px;
     letter-spacing: 2px;
-    font-size: 30px;
+    font-size: 2.3em;
 }
 
-.separator .fa-money {
-    font-size: 22px;
-}
+
 
 section.fun-facts ul {
     list-style: none;
-    padding: 20px;
-    margin: 0 auto;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: flex-start;
+
 }
 
 section.fun-facts ul li {
@@ -485,7 +515,6 @@ section.fun-facts h3.numbers {
 
 section.fun-facts ul li p {
     font-size: 20px;
-    text-transform: capitalize;
     padding-top: 5px;
     color: #fab702;
 }
@@ -500,7 +529,6 @@ section.partners {
     justify-content: center;
     flex-wrap: wrap;
     background: black;
-    height: 200px;
 }
 
 section.partners img {
@@ -841,6 +869,7 @@ body#contact {
     }
 }
 
+
 @media screen and (max-width: 768px) {
 
     section.fun-facts {
@@ -861,6 +890,10 @@ body#contact {
 }
 
 @media screen and (max-width: 640px) {
+
+    section.fun-facts {
+        height: 650px;
+    }
 
     section.fun-facts ul {
     }
@@ -884,6 +917,10 @@ body#contact {
         padding-bottom: 10px;
     }
 
+    section.fun-facts {
+        height: 1050px;
+    }
+
     section.partners {
         height: 650px;
     }
@@ -893,14 +930,6 @@ body#contact {
         height: 100px;
     }
 }
-
-@media screen and (max-width: 380px) {
-    section.fun-facts {
-        height: 1050px;
-    }
-}
-
-
 
 @media screen and (max-width: 320px) {
     section.fun-facts ul {
