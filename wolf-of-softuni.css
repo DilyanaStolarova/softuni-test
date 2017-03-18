@@ -806,70 +806,41 @@ body#contact {
 @media screen and (max-width: 1600px) {
 
     .footer-container div.social {
-        margin-top: 30px;
+        margin-top: 25px;
     }
 }
 
 @media screen and (max-width: 1024px) {
 
-    section.fun-facts ul {
-        list-style: none;
-        padding: 50px;
-    }
-
-    section.fun-facts ul li {
-        max-width: 110px;
-        padding: 20px 20px;
-        margin: 0 20px;
-    }
-
-    section.fun-facts h3.numbers {
-        padding-bottom: 10px;
-        font-size: 20px;
-    }
-
     .footer-container div.social {
-        margin-top: 30px;
+        margin-top: 25px;
     }
 }
 
 @media screen and (max-width: 960px) {
 
-    section.fun-facts ul {
-        padding: 50px;
-    }
-
-    section.fun-facts ul li {
-        padding: 20px 20px;
-    }
-
     section.fun-facts h3.numbers {
         padding-bottom: 10px;
     }
 
     .footer-container div.social {
-        margin-top: 30px;
+        margin-top: 25px;
+    }
+
+    section.partners {
+        height: 300px;
     }
 }
 
+
 @media screen and (max-width: 768px) {
 
-    section.fun-facts ul {
-        padding: 50px;
-    }
-
-    section.fun-facts ul li {
-        vertical-align: top;
-        width: 80px;
-        padding: 20px 20px;
+    section.fun-facts {
+        height: 600px;
     }
 
     section.fun-facts h3.numbers {
         padding-bottom: 10px;
-    }
-
-    .fun-facts {
-        height: 450px;
     }
 
     section.partners {
@@ -877,61 +848,50 @@ body#contact {
     }
 
     .footer-container div.social {
-        margin-top: 30px;
+        margin-top: 25px;
     }
 }
 
 @media screen and (max-width: 640px) {
 
-    .fun-facts {
-        height: 600px;
-    }
-    section.fun-facts ul {
-        padding: 50px;
+    section.fun-facts {
+        height: 650px;
     }
 
-    section.fun-facts ul li {
-        width: 100px;
-        vertical-align: top;
-        padding: 20px 20px;
+    section.fun-facts ul {
     }
 
     section.fun-facts h3.numbers {
         padding-bottom: 10px;
     }
 
+    section.partners {
+        height: 400px;
+    }
 
     .footer-container div.social {
-        margin-top: 30px;
+        margin-top: 25px;
     }
 }
 
 @media screen and (max-width: 480px) {
-    section.fun-facts ul {
-        padding: 50px;
-    }
-
-    section.fun-facts ul li {
-        width: 120px;
-        padding: 20px 20px;
-    }
 
     section.fun-facts h3.numbers {
         padding-bottom: 10px;
     }
 
-    .fun-facts {
-        height: 1000px;
+    section.fun-facts {
+        height: 1050px;
     }
 
     section.partners {
-        height: 360px;
+        height: 650px;
     }
 
     .footer-container div.social {
-        margin-top: 30px;
+        margin-top: -10px;
+        height: 100px;
     }
-
 }
 
 @media screen and (max-width: 320px) {
@@ -947,8 +907,8 @@ body#contact {
         padding-bottom: 10px;
     }
 
-    .fun-facts {
-        height: 1100px;
+    section.fun-facts {
+        height: 1250px;
     }
 
     section.partners {
@@ -960,7 +920,8 @@ body#contact {
     }
 
     .footer-container div.social {
-        margin-top: 10px;
+        margin-top: -10px;
+        height: 100px;
     }
 }
 
