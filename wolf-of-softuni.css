@@ -25,7 +25,7 @@ body {
 }
 
 
-#home-header img{
+#home-header nav img, #team-header nav img{
     padding-left: 15px;
     height: 70px;
 }
@@ -79,7 +79,7 @@ div.contanier-slider{
     z-index: 999;
 }
 
-#home-header nav {
+#home-header nav, #team-header nav {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -88,7 +88,7 @@ div.contanier-slider{
 
 }
 
-#home-header nav ul {
+#home-header nav ul,#team-header nav ul {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -98,7 +98,7 @@ div.contanier-slider{
     padding-right: 15px;
 }
 
-#home-header nav ul li {
+#home-header nav li, #team-header nav li {
     padding: 25px 0 20px 20px;
     font-size: 1.6em;
     text-transform: uppercase;
@@ -106,10 +106,16 @@ div.contanier-slider{
     font-weight: 400;
 }
 
-#home-header nav ul li a {
+#home-header nav a, #team-header nav a {
     color: #fff;
     text-decoration: none;
 }
+
+
+#home-header nav ul a, #team-header nav ul a:hover{
+    opacity: 0.7;
+}
+
 
 #home-header button{
     background: none;
@@ -289,7 +295,6 @@ div.contanier-slider{
     right: 7px;
     bottom: 13px;
 }
-
 
 
 
@@ -592,33 +597,6 @@ section.partners img {
 body#team {
     font-family: 'Raleway', 'Open Sans', sans-serif;
 }
-
-#team-header nav {
-    background-color: #18191b;
-    display: flex;
-    flex-direction: row;
-}
-
-#team-header nav ul {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    list-style: none;
-    flex-wrap: wrap;
-}
-
-#team-header nav ul li {
-    padding-left: 10px;
-}
-
-#team-header nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-
-
 
 body#team main {
     background: #fab702;
@@ -963,7 +941,7 @@ body#contact {
 }
 
 @media all and (min-width:1200px){
-    #home-header nav{
+    #home-header nav, #team-header nav{
         width: 1180px;
     }
 }
