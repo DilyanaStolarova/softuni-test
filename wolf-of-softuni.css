@@ -112,7 +112,8 @@ div.contanier-slider{
 }
 
 
-#home-header nav ul a, #team-header nav ul a:hover{
+#home-header nav ul a:hover,
+#team-header nav ul a:hover{
     opacity: 0.7;
 }
 
