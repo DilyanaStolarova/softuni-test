@@ -147,12 +147,13 @@ div.contanier-slider{
 #home-header button:hover a{
     color: #dcdfe3;
 }
+
 .about {
     text-align: center;
     background-color: #18191b;
     padding-top: 60px;
     padding-bottom: 60px;
-    color: #dcdfe3;
+    color: #fff;
 }
 
 .about h2{
@@ -191,6 +192,30 @@ div.contanier-slider{
     width: 300px;
     left: 100%;
     margin-left: 15px;
+}
+
+
+@media screen and (max-width: 780px ) {
+    .separator span::before,
+    .separator span::after {
+        width: 180px;
+    }
+}
+
+
+@media screen and (max-width: 550px ) {
+    .separator span::before,
+    .separator span::after {
+        width: 100px;
+    }
+}
+
+
+@media screen and (max-width: 320px ) {
+    .separator span::before,
+    .separator span::after {
+        width: 70px;
+    }
 }
 
 
@@ -236,7 +261,8 @@ div.contanier-slider{
 }
 
 
-/*Section wolf-advice*/
+
+/***********************Section Wolf-Advice ***********************/
 
 .wolf-advice {
     background: #222327;
@@ -252,7 +278,6 @@ div.contanier-slider{
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-
 
 
 .wolf-advice p {
@@ -298,23 +323,16 @@ div.contanier-slider{
 }
 
 
-
-
 @media screen and (max-width: 480px) {
     .wolf-advice {
-        padding: 50px 0 60px;
-
+        padding: 50px 0;
     }
+
     .wolf-advice p {
         width: 85%;
         box-sizing: border-box;
         padding: 60px 30px;
-        font-size: 1.2em;
         margin-top: 0;
-    }
-
-    .wolf-advice h2 {
-        font-size: 2em;
     }
 
     .wolf-advice p::before {
@@ -328,10 +346,12 @@ div.contanier-slider{
     }
 }
 
+
 @media screen and (max-width: 320px) {
     .wolf-advice h2 {
         font-size: 1.6em;
     }
+    
     .wolf-advice p {
         font-size: 1.1em;
     }
@@ -340,20 +360,18 @@ div.contanier-slider{
 
 
 
-
 /***********************Section Call Him ***********************/
-
 
 .call-to-action {
     background-color: #fab702;
-    width: 100%;
     height: 200px;
     display: flex;
 }
 
+
 .call-him {
     display: block;
-    background-color: transparent;
+    background: none;
     border: 3px solid #222222;
     width: 260px;
     cursor: pointer;
@@ -368,21 +386,32 @@ div.contanier-slider{
     text-align: center;
 }
 
+
 .call-him:hover {
     background-color: #222222;
     color: #fff;
 }
+
 
 .fa-chevron-right {
     padding-left: 5px;
 }
 
 
+@media screen and (max-width: 320px) {
+    .call-him {
+        width: 200px
+    }
+}
 
-/*Section Judge*/
+
+
+
+
+/***********************Section Judge ***********************/
 
 .judge {
-    background: url('Images/judge-main.jpg') no-repeat center;
+    background: url('Images/judge-main.jpg') no-repeat center center;
     background-size: cover;
     padding: 80px 0;
     text-align: center;
@@ -399,38 +428,19 @@ div.contanier-slider{
 }
 
 
-
-.judge .separator span {
-    position: relative;
-}
-
-
 .judge .separator span .fa-money {
     text-shadow: 2px 1px 1px #2a282b;
-
 }
 
+
 .judge .separator span::before {
-    content: "";
-    position: absolute;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    top: 5px;
-    right: 100%;
-    width: 300px;
-    margin-right: 15px;
 }
 
 
 .judge .separator span::after {
-    content: "";
-    position: absolute;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    top: 5px;
-    width: 300px;
-    left: 100%;
-    margin-left: 15px;
 }
-
 
 
 .judge .flex {
@@ -441,12 +451,11 @@ div.contanier-slider{
 
 
 .judge .flex .judge-info {
-    width: 190px;
-    height: 190px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     margin: 30px;
     background: rgba(250, 183, 2, 0.76);
-    padding: 20px;
 }
 
 
@@ -464,12 +473,12 @@ div.contanier-slider{
     text-decoration: none;
     color: #000000;
     text-transform: uppercase;
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 1.1em;
+    font-weight: 900;
     display: block;
-    width: 190px;
-    height: 190px;
-    line-height: 190px;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
     text-align: center;
 }
 
@@ -479,125 +488,224 @@ div.contanier-slider{
 }
 
 
+@media screen and (max-width: 480px) {
+    .judge {
+        padding: 50px 0;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .judge h2 {
+        font-size: 1.6em;
+    }
+
+    .judge .flex .judge-info {
+        width: 160px;
+        height: 160px;
+        margin: 20px;
+    }
+
+    .judge .flex .judge-info a {
+        font-size: 1em;
+        width: 160px;
+        height: 160px;
+        line-height: 160px;
+    }
+}
+
+
+
+
 /************************Section Fun Facts ************************/
 
 .fun-facts {
-    width: 100%;
     background-color: #18191B;
-    color: white;
+    color: #fff;
     text-align: center;
-    padding: 80px 0;
+    padding: 100px 0 80px;
 }
 
-section.fun-facts h2 {
-    margin: auto;
+
+.fun-facts h2 {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 2.3em;
 }
 
 
-
-section.fun-facts ul {
+.fun-facts ul {
     list-style: none;
-
 }
 
-section.fun-facts ul li {
+
+.fun-facts ul li {
     display: inline-block;
-    padding: 50px;
+    margin: 40px 60px;
 }
 
-section.fun-facts img {
-    padding-bottom: 20px;
+
+.fun-facts img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
     max-width: 100%;
-    height: auto;
 }
 
-section.fun-facts h3.numbers {
-    padding-bottom: 10px;
-    font-size: 30px;
+
+.fun-facts h3.numbers {
+    margin-bottom: 15px;
+    font-size: 2.3em;
 }
 
-section.fun-facts ul li p {
-    font-size: 20px;
-    padding-top: 5px;
+
+.fun-facts ul li p {
+    font-size: 1.5em;
     color: #fab702;
 }
+
+
+
+@media screen and (max-width: 640px) {
+    .fun-facts img {
+        margin-bottom: 5px;
+    }
+
+    .fun-facts h3.numbers {
+        margin-bottom: 10px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .fun-facts {
+        padding: 50px 0 20px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .fun-facts h2 {
+        font-size: 1.6em;
+    }
+
+    .fun-facts ul li {
+        margin: 30px;
+    }
+
+    .fun-facts img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .fun-facts h3.numbers {
+        font-size: 1.7em;
+    }
+
+    .fun-facts ul li p {
+        font-size: 1.1em;
+    }
+}
+
 
 
 
 /************************ Section Partners ************************/
 
-section.partners {
+.partners {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background: black;
+    background: #000;
+    padding: 30px;
 }
 
-section.partners img {
-    display: block;
+
+.partners img {
     margin: 30px;
     max-width: 100%;
-    height: auto;
 }
 
 
 
 
-/************************ Section Footer ************************/
+/************************ Footer ************************/
 
-.footer-container {
+footer {
     background-color: #0B0B0B;
-    height: 80px;
-    color: white;
-    padding: 30px;
+    color: #fff;
+    padding: 30px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.footer-container p {
-    width: 215px;
+
+footer p {
     text-transform: capitalize;
     padding: 30px 10px;
 }
 
-.footer-container p span a {
+
+footer p span {
+    margin-left: 10px;
+}
+
+
+footer p span a {
     color: #fab702;
     text-transform: uppercase;
     text-decoration: none;
 }
 
-.footer-container div.social {
-    width: 100px;
-    height: 50px;
-    margin-left: 20px;
+
+footer .social {
+    margin-left: 40px;
 }
 
-.social a {
+
+footer .social a {
     text-decoration: none;
-    color: white;
-    padding-left: 10px;
+    color: #fff;
+    margin-left: 10px;
+    font-size: 1.2em;
 }
 
-.social a:hover {
+
+footer .social a:hover {
     color: #FAB702;
 }
 
 
+@media screen and (max-width: 480px) {
+    footer {
+        flex-direction: column;
+    }
+
+    footer .social {
+        margin-left: 0;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    footer {
+        font-size: 0.9em;
+    }
+}
 
 
 
 
-/*Team-Page*/
+
+/************************ Team Page ************************/
 
 body#team {
     font-family: 'Raleway', 'Open Sans', sans-serif;
 }
+
 
 body#team main {
     background: #fab702;
@@ -605,33 +713,24 @@ body#team main {
 
 
 body#team main img {
-    float: left;
-    width: 70%;
+    width: 100%;
 }
 
 
 body#team main .text-container {
-    float: right;
-    width: calc(30% - 40px);
-    margin: 40px 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
     font-size: 1.3em;
+    padding: 70px 30px;
 }
-
-
-body#team main::after {
-    clear: both;
-    display: block;
-    content: "";
-    height: 0;
-}
-
 
 
 body#team main .team h4 {
     margin-bottom: 15px;
     text-transform: uppercase;
 }
-
 
 
 body#team main .team ul {
@@ -646,98 +745,39 @@ body#team main .team ul li {
 
 
 body#team main .text-container .motto {
-    margin-top: 30px;
     font-style: italic;
-    text-align: center;
 }
 
 
-
-@media screen and (max-width: 1024px) {
-    body#team main img {
-        float: none;
-        width: 100%;
-    }
-
+@media screen and (max-width: 768px) {
     body#team main .text-container {
-        float: none;
-        width: 100%;
-        margin: 15px 0 0;
-        padding-bottom: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+
+    body#team main .text-container .motto {
+        margin-top: 60px;
     }
 }
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 320px) {
     body#team main .text-container {
-        font-size: 1.2em;
+        padding: 20px;
+        font-size: 1.1em;
     }
-}
 
-
-@media screen and (max-width: 480px) {
-    body#team main .team h4 {
-        text-align: center;
-    }
-    
-    body#team main .team li {
-        display: inline-block;
+    body#team main .text-container .motto {
+        margin-top: 30px;
     }
 }
 
 
 
 
-.footer-container {
-    background-color: #0B0B0B;
-    height: 80px;
-    color: white;
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.footer-container p {
-    width: 215px;
-    text-transform: capitalize;
-    padding: 30px 10px;
-}
-
-.footer-container p span a {
-    color: #fab702;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.footer-container div.social {
-    width: 100px;
-    height: 50px;
-    margin-left: 20px;
-}
-
-.social a {
-    text-decoration: none;
-    color: white;
-    padding-left: 10px;
-}
-
-.social a:hover {
-    color: #FAB702;
-}
 
 
-
-
-
-
-
-
-/*Contact-Page*/
+/************************ Contact Page ************************/
 
 body#contact {
     font-family: 'Raleway', 'Open Sans', sans-serif;
@@ -773,177 +813,4 @@ body#contact {
     background-color: grey;
 }
 
-.footer-container {
-    background-color: #0B0B0B;
-    height: 80px;
-    color: white;
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.footer-container p {
-    width: 215px;
-    text-transform: capitalize;
-    padding: 30px 10px;
-}
-
-.footer-container p span a {
-    color: #fab702;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.footer-container div.social {
-    width: 100px;
-    height: 50px;
-    margin-left: 20px;
-}
-
-.social a {
-    text-decoration: none;
-    color: white;
-    padding-left: 10px;
-}
-
-.social a:hover {
-    color: #FAB702;
-}
-
-
-
-
-
-
-/************************ Media Queries ************************/
-
-@media screen and (max-width: 1600px) {
-
-    .footer-container div.social {
-        margin-top: 25px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-
-    .footer-container div.social {
-        margin-top: 25px;
-    }
-}
-
-@media screen and (max-width: 960px) {
-
-    section.fun-facts h3.numbers {
-        padding-bottom: 10px;
-    }
-
-    .footer-container div.social {
-        margin-top: 25px;
-    }
-
-    section.partners {
-        height: 300px;
-    }
-}
-
-
-@media screen and (max-width: 768px) {
-
-    section.fun-facts {
-        height: 600px;
-    }
-
-    section.fun-facts h3.numbers {
-        padding-bottom: 10px;
-    }
-
-    section.partners {
-        height: 300px;
-    }
-
-    .footer-container div.social {
-        margin-top: 25px;
-    }
-}
-
-@media screen and (max-width: 640px) {
-
-    section.fun-facts {
-        height: 650px;
-    }
-
-    section.fun-facts ul {
-    }
-
-    section.fun-facts h3.numbers {
-        padding-bottom: 10px;
-    }
-
-    section.partners {
-        height: 400px;
-    }
-
-    .footer-container div.social {
-        margin-top: 25px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-
-    section.fun-facts h3.numbers {
-        padding-bottom: 10px;
-    }
-
-    section.fun-facts {
-        height: 1050px;
-    }
-
-    section.partners {
-        height: 650px;
-    }
-
-    .footer-container div.social {
-        margin-top: -10px;
-        height: 100px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    section.fun-facts ul {
-        padding: 50px;
-    }
-
-    section.fun-facts ul li {
-        padding: 20px 20px;
-    }
-
-    section.fun-facts h3.numbers {
-        padding-bottom: 10px;
-    }
-
-    section.fun-facts {
-        height: 1250px;
-    }
-
-    section.partners {
-        height: 600px;
-    }
-
-    .footer-container {
-        height: 120px;
-    }
-
-    .footer-container div.social {
-        margin-top: -10px;
-        height: 100px;
-    }
-}
-
-@media all and (min-width:1200px){
-    .nav-default {
-        width: 1180px;
-    }
-}
 
