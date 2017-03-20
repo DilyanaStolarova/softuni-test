@@ -910,15 +910,24 @@ body#contact main .map-container h2 {
 
 body#contact main form .button {
     background: #fab702;
-    width: 100px;
+    width: 120px;
     display: block;
     margin: 30px auto 0;
-    padding: 10px 20px;
+    padding: 8px 25px;
     text-transform: uppercase;
-    border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     font-weight: bold;
+    font-size: 1.2em;
+    letter-spacing: 1px;
     cursor: pointer;
+    border: 2px solid transparent;
+}
+
+
+body#contact main form .button:hover {
+    background: #18191b;
+    color: #fab702;
+    border: 2px solid #fab702;
 }
 
 
