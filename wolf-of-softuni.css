@@ -361,6 +361,41 @@ div.contanier-slider{
 
 
 
+
+/*********************** Section Money ***********************/
+
+
+.money {
+    background: url('Images/dollar.jpg') no-repeat center;
+    background-size: cover;
+    height: 600px;
+}
+
+
+.money p {
+    color: #fab702;
+    font-size: 2em;
+    visibility: hidden;
+    text-align: center;
+    padding-top: 220px;
+    font-weight: 900;
+}
+
+
+.money:hover p {
+    visibility: visible;
+}
+
+
+.money:hover {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Images/dollar.jpg') no-repeat center;
+    background-size: cover;
+}
+
+
+
+
+
 /***********************Section Call Him ***********************/
 
 .call-to-action {
