@@ -168,6 +168,7 @@ div.contanier-slider{
     margin: 17px 0 35px 0;
 }
 
+
 .separator span {
     position: relative;
 }
@@ -781,7 +782,9 @@ body#team main .text-container .motto {
 
 body#contact {
     font-family: 'Raleway', 'Open Sans', sans-serif;
+    background: #fab702;
 }
+
 
 #contact-header nav {
     background-color: #18191b;
@@ -807,10 +810,124 @@ body#contact {
     text-decoration: none;
 }
 
-#map {
+
+
+
+body#contact main form {
+    width: 500px;
+    max-width: 90%;
+    margin: 80px auto;
+    background: #18191b;
+    color: #fff;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+
+body#contact main form h2,
+body#contact main form p {
+    text-align: center;
+}
+
+
+body#contact main form h2 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+
+body#contact main form p {
+    font-size: 1.1em;
+    margin-bottom: 35px;
+}
+
+
+body#contact main form i {
+    color: #fab702;
+    font-size: 1em;
+}
+
+
+body#contact main form .fa-chevron-left {
+    margin-right: 5px;
+}
+
+
+body#contact main form label {
+    display: block;
+    margin: 15px;
+}
+
+
+body#contact main form label span {
+    display: inline-block;
+    width: 100px;
+    font-size: 1.1em;
+}
+
+
+body#contact main form label:last-of-type span {
+    vertical-align: top;
+}
+
+
+body#contact main form label input {
+    height: 25px;
+    width: calc(100% - 110px);
+    outline: none;
+}
+
+
+body#contact main form label textarea {
+    height: 180px;
+    width: calc(100% - 110px);
+    outline: none;
+    resize: none;
+}
+
+
+body#contact main .map-container h2 {
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    padding: 0 15px;
+}
+
+
+@media screen and (max-width: 480px) {
+    body#contact main form label span {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    body#contact main form label input,
+    body#contact main form label textarea {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+body#contact main form .button {
+    background: #fab702;
+    width: 100px;
+    display: block;
+    margin: 30px auto 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+body#contact main .map-container #map {
+    height: 400px;
     width: 100%;
     background-size: cover;
     background-color: grey;
 }
+
 
 
