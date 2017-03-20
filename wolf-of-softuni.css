@@ -4,7 +4,8 @@
 
 body {
     font-size: 13px;
-    padding-top: 90px;
+    padding-top: 93px;
+    background-color: #18191b;
 }
 
 
@@ -14,16 +15,19 @@ body {
 }
 
 /*Home-Page*/
+body#home{
+    padding-top: 5px;
+}
 
 #home {
     font-family: 'Raleway', 'Open Sans', sans-serif;
 }
 
 #home-header {
-    background: url("Images/Nakov-Wolf.jpg") no-repeat center center;
-    background-size: cover;
-    width: 100%;
-    height: 650px;
+    background: url("Images/Nakov-Wolf.jpg") no-repeat top center;
+    background-size: 100%;
+    max-width: 100%;
+    height: 42rem;
 }
 
 
@@ -35,20 +39,25 @@ body {
 .logo img:hover{
     cursor: pointer;
 }
-div.contanier-slider{
+
+div.container-slider{
     position: relative;
+    width: 100%;
     height: 100%;
     text-align: center;
 }
+
 
 #home-header .slider{
     background-color: rgba(250, 183, 2, 0.76);
     padding: 10px;
     width: 400px;
-    height: 220px;
-    margin: 0 auto;
-    position: relative;
-    top: 390px;
+    height: auto;
+    right: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    top: 60%;
 
 }
 
@@ -81,12 +90,9 @@ div.contanier-slider{
     z-index: 999;
 }
 
-.nav-default {
-    display: flex;
-    align-items: center;
-    padding: 10px;
+.nav-default, .about{
+    max-width: 1400px;
     margin: 0 auto;
-
 }
 
 .nav-default ul {
@@ -140,14 +146,11 @@ div.contanier-slider{
 
 #home-header button:hover{
     background-color: #18191b;
-    color: #dcdfe3;
+    color: #ffffff;
     cursor: pointer;
 }
 
-#home-header button:hover a{
-    color: #dcdfe3;
-}
-
+/************************Section His Story ************************/
 .about {
     text-align: center;
     background-color: #18191b;
@@ -217,6 +220,11 @@ div.contanier-slider{
     .separator span::after {
         width: 70px;
     }
+
+
+    .his-story p{
+        text-align: justify;
+    }
 }
 
 
@@ -227,10 +235,8 @@ div.contanier-slider{
 }
 
 
-
 .his-story-container{
     margin: 0 auto;
-    width: 80%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -352,46 +358,11 @@ div.contanier-slider{
     .wolf-advice h2 {
         font-size: 1.6em;
     }
-    
+
     .wolf-advice p {
         font-size: 1.1em;
     }
 }
-
-
-
-
-
-/*********************** Section Money ***********************/
-
-
-.money {
-    background: url('Images/dollar.jpg') no-repeat center;
-    background-size: cover;
-    height: 600px;
-}
-
-
-.money p {
-    color: #fab702;
-    font-size: 2em;
-    visibility: hidden;
-    text-align: center;
-    padding-top: 220px;
-    font-weight: 900;
-}
-
-
-.money:hover p {
-    visibility: visible;
-}
-
-
-.money:hover {
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Images/dollar.jpg') no-repeat center;
-    background-size: cover;
-}
-
 
 
 
@@ -440,7 +411,35 @@ div.contanier-slider{
     }
 }
 
+/*********************** Section Money ***********************/
 
+
+.money {
+    background: url('Images/dollar.jpg') no-repeat center;
+    background-size: cover;
+    height: 600px;
+}
+
+
+.money p {
+    color: #fab702;
+    font-size: 2em;
+    visibility: hidden;
+    text-align: center;
+    padding-top: 220px;
+    font-weight: 900;
+}
+
+
+.money:hover p {
+    visibility: visible;
+}
+
+
+.money:hover {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Images/dollar.jpg') no-repeat center;
+    background-size: cover;
+}
 
 
 
@@ -836,9 +835,7 @@ body#contact {
     flex-wrap: wrap;
 }
 
-#contact-header nav ul li {
-    padding-left: 10px;
-}
+
 
 #contact-header nav ul li a {
     color: white;
@@ -971,6 +968,245 @@ body#contact main .map-container #map {
     width: 100%;
     background-size: cover;
     background-color: grey;
+}
+
+
+#menu-icon, #contact-header #menu-icon {
+    display: none;
+    width: 40px;
+    height: 40px;
+    background: url(Images/list.png) center no-repeat;
+}
+
+/*Header media queries*/
+
+@media all and (max-width:1200px){
+    #home-header{
+        height: 36rem;
+    }
+
+    #home-header h3{
+        font-size: 3.2em;
+    }
+
+    #home-header h1{
+        font-size: 1.8em;
+    }
+}
+
+@media all and (max-width:1024px){
+    #home-header{
+        height: 34rem;
+    }
+
+    #home-header .slider{
+        width: 20rem;
+
+    }
+
+    #home-header h3{
+        font-size: 2.8em;
+    }
+}
+
+@media all and (max-width:960px){
+    .nav-default{
+        padding: 6px;
+    }
+
+    .nav-default img{
+        height: 60px;
+    }
+
+    .nav-default li{
+        font-size: 1.3em;
+    }
+
+    body#home{
+        padding-top: 40px;
+    }
+    body#team{
+    padding-top: 82px;
+}
+    #home-header{
+        height: 27rem;
+    }
+
+    #home-header .slider{
+        width: 15rem;
+
+    }
+
+    #home-header h3{
+        font-size: 2em;
+    }
+
+    #home-header h1{
+        font-size: 1.6em;
+    }
+
+    #home-header button{
+        padding: 0px 15px;
+        height: 1.8rem;
+    }
+
+    #home-header button a{
+        font-size: 0.8em;
+    }
+
+}
+
+@media all and (max-width:768px){
+
+    .nav-default{
+        padding: 4px;
+    }
+
+    .nav-default img{
+        height: 50px;
+    }
+
+    .nav-default li{
+        font-size: 1.1em;
+    }
+
+    #home-header{
+        height: 22rem;
+    }
+
+    #home-header .slider {
+        width: 13rem;
+        padding: 5px;
+    }
+
+    #home-header button a{
+        font-size: 0.8em;
+    }
+    #home-header h1{
+        font-size: 1.4em;
+    }
+
+    #home-header h3{
+        font-size: 1.6em;
+    }
+    .about h2{
+        font-size: 1.8em;
+    }
+}
+
+
+@media all and (max-width:640px) {
+
+    body{
+        padding-top: 83px;
+    }
+    #home-header{
+        background: url("Images/Nakov-wolf700x401.jpg") no-repeat center center;
+        background-size: cover;
+        height: 340px;
+    }
+
+    #home-header .slider{
+        width: 211px;
+
+    }
+
+    #home-header h3{
+        font-size: 1.6em;
+    }
+
+    #home-header h1{
+        font-size: 1.2em;
+    }
+
+    #home-header button{
+        padding: 0px 15px;
+        height: 29px;
+    }
+
+    #home-header button a{
+        font-size: 0.8em;
+    }
+
+    .nav-default img{
+        height: 50px;
+    }
+
+    .nav-default li{
+        font-size: 1.2em;
+    }
+
+}
+
+@media all and (min-width:480px){
+    .nav-default {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        margin: 0 auto;
+
+    }
+
+    .his-story img{
+        width:300px;
+        height:220px;
+    }
+}
+
+@media all and (max-width:480px){
+    body{
+        padding-top: 170px;
+    }
+
+    body#team{
+        padding-top: 73px;
+    }
+
+    body#contact{
+        padding-top: 40px;
+    }
+
+    .logo {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .logo{
+        display: inline-block;
+    }
+
+    .about h2{
+        font-size: 1.6em;
+    }
+
+    #menu-icon{
+        display: inline-block;
+        background-color: #585353;
+        border-radius: 3px;
+        float: right;
+        margin-top:15px;
+        margin-right: 15px;
+    }
+
+     ul.top-list{
+        display:none;
+        height: auto;
+    }
+
+    a:hover#menu-icon{
+        background-color: #454545;
+        opacity: 0.8;
+    }
+
+    .nav-default li{
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    nav:hover ul.top-list{
+        display: block;
+        padding: 10px 0;
+    }
 }
 
 
