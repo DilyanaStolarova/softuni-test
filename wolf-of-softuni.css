@@ -162,10 +162,13 @@ div.container-slider{
     letter-spacing: 3px;
 }
 
-#home-header button:hover{
+#home-header button:hover {
     background-color: #18191b;
-    color: #ffffff;
     cursor: pointer;
+}
+
+#home-header button:hover a {
+    color: #fff;
 }
 
 
