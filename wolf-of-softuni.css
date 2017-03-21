@@ -6,6 +6,8 @@ body {
     font-size: 13px;
     padding-top: 93px;
     background-color: #18191b;
+    max-width: 1600px;
+    margin: auto;
 }
 
 
@@ -81,6 +83,7 @@ div.container-slider{
     letter-spacing: 3px;
 }
 
+
 .container-nav {
     width: 100%;
     background-color: #18191b;
@@ -90,8 +93,23 @@ div.container-slider{
     z-index: 999;
 }
 
+
+
+@media screen and (min-width: 1600px) {
+    .container-nav {
+        width: 100%;
+        background-color: #18191b;
+        border-bottom: solid 1px rgba(0,0,0,0.0);
+        position: fixed;
+        top: 0;
+        right: 5px;
+        z-index: 999;
+    }
+}
+
+
 .nav-default, .about{
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -333,16 +351,28 @@ div.container-slider{
 }
 
 
+@media screen and (max-width: 768px) {
+    .wolf-advice h2 {
+        font-size: 1.8em;
+    }
+}
+
+
 @media screen and (max-width: 480px) {
     .wolf-advice {
         padding: 50px 0;
     }
 
+    .wolf-advice h2 {
+        font-size: 1.6em;
+    }
+
     .wolf-advice p {
-        width: 85%;
+        width: 90%;
         box-sizing: border-box;
-        padding: 60px 30px;
+        padding: 60px 28px;
         margin-top: 0;
+        font-size: 1.1em;
     }
 
     .wolf-advice p::before {
@@ -356,16 +386,6 @@ div.container-slider{
     }
 }
 
-
-@media screen and (max-width: 320px) {
-    .wolf-advice h2 {
-        font-size: 1.6em;
-    }
-
-    .wolf-advice p {
-        font-size: 1.1em;
-    }
-}
 
 
 
@@ -497,8 +517,8 @@ div.container-slider{
 
 
 .judge .flex .judge-info {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     margin: 30px;
     background: rgba(250, 183, 2, 0.76);
@@ -522,9 +542,9 @@ div.container-slider{
     font-size: 1.1em;
     font-weight: 900;
     display: block;
-    width: 200px;
-    height: 200px;
-    line-height: 200px;
+    width: 220px;
+    height: 220px;
+    line-height: 220px;
     text-align: center;
 }
 
@@ -534,31 +554,55 @@ div.container-slider{
 }
 
 
-@media screen and (max-width: 480px) {
-    .judge {
-        padding: 50px 0;
+@media screen and (min-width: 3400px) {
+    .judge .flex .judge-info {
+        width: 330px;
+        height: 330px;
+    }
+
+    .judge .flex .judge-info a {
+        width: 330px;
+        height: 330px;
+        line-height: 330px;
     }
 }
 
 
-@media screen and (max-width: 320px) {
+
+
+
+@media screen and (max-width: 768px) {
+    .judge h2 {
+        font-size: 1.8em;
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .judge {
+        padding: 50px 0;
+    }
+
     .judge h2 {
         font-size: 1.6em;
     }
 
     .judge .flex .judge-info {
-        width: 160px;
-        height: 160px;
+        width: 180px;
+        height: 180px;
         margin: 20px;
     }
 
     .judge .flex .judge-info a {
-        font-size: 1em;
-        width: 160px;
-        height: 160px;
-        line-height: 160px;
+        font-size: 0.9em;
+        width: 180px;
+        height: 180px;
+        line-height: 180px;
     }
 }
+
+
 
 
 
@@ -612,6 +656,13 @@ div.container-slider{
 
 
 
+@media screen and (max-width: 768px) {
+    .fun-facts h2 {
+        font-size: 1.8em;
+    }
+}
+
+
 @media screen and (max-width: 640px) {
     .fun-facts img {
         margin-bottom: 5px;
@@ -624,15 +675,12 @@ div.container-slider{
 
 
 @media screen and (max-width: 480px) {
-    .fun-facts {
-        padding: 50px 0 20px;
-    }
-}
-
-
-@media screen and (max-width: 320px) {
     .fun-facts h2 {
         font-size: 1.6em;
+    }
+
+    .fun-facts {
+        padding: 50px 0 20px;
     }
 
     .fun-facts ul li {
@@ -652,6 +700,8 @@ div.container-slider{
         font-size: 1.1em;
     }
 }
+
+
 
 
 
@@ -839,7 +889,7 @@ body#team main .text-container .motto {
 
 body#contact {
     font-family: 'Raleway', 'Open Sans', sans-serif;
-    background: #fab702;
+    padding-top: 0;
 }
 
 
@@ -853,6 +903,7 @@ body#contact {
 
 body#contact main {
     background: #fab702;
+    padding-top: 90px;
 }
 
 
@@ -947,22 +998,6 @@ body#contact main .map-container h2 {
 }
 
 
-@media screen and (max-width: 480px) {
-    body#contact main form label span {
-        display: block;
-        margin-bottom: 5px;
-        margin-right: 0;
-        text-align: left;
-    }
-
-    body#contact main form label input,
-    body#contact main form label textarea {
-        display: block;
-        width: 100%;
-    }
-}
-
-
 body#contact main form .button {
     background: #fab702;
     width: 120px;
@@ -983,6 +1018,50 @@ body#contact main form .button:hover {
     background: #18191b;
     color: #fab702;
     border: 2px solid #fab702;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    body#contact main {
+        padding-top: 40px;
+    }
+
+    body#contact main form {
+    padding: 35px 15px;
+    }
+
+    body#contact main form label span {
+        display: block;
+        margin-bottom: 5px;
+        margin-right: 0;
+        text-align: left;
+    }
+
+    body#contact main form label input,
+    body#contact main form label textarea {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (min-width: 3800px) {
+    body#contact main form label input,
+    body#contact main form label textarea {
+        height: 25px;
+        width: calc(100% - 166px);
+        outline: none;
+        border-radius: 6px;
+        padding: 3px;
+        box-sizing: border-box;
+        border: none;
+    }
+
+    body#contact main form label span {
+        width: 153px;
+    }
 }
 
 
