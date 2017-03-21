@@ -14,7 +14,7 @@ body {
     padding: 0;
 }
 
-/*Home-Page*/
+/************************Home Page************************/
 body#home{
     padding-top: 5px;
 }
@@ -150,7 +150,11 @@ div.container-slider{
     cursor: pointer;
 }
 
+
+
+
 /************************Section His Story ************************/
+
 .about {
     text-align: center;
     background-color: #18191b;
@@ -221,8 +225,7 @@ div.container-slider{
         width: 70px;
     }
 
-
-    .his-story p{
+    .his-story p {
         text-align: justify;
     }
 }
@@ -367,6 +370,42 @@ div.container-slider{
 
 
 
+
+
+/*********************** Section Money ***********************/
+
+
+.money {
+    background: url('Images/dollar.jpg') no-repeat center;
+    background-size: cover;
+    height: 600px;
+}
+
+
+.money p {
+    color: #fab702;
+    font-size: 2em;
+    visibility: hidden;
+    text-align: center;
+    padding-top: 220px;
+    font-weight: 900;
+}
+
+
+.money:hover p {
+    visibility: visible;
+}
+
+
+.money:hover {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Images/dollar.jpg') no-repeat center;
+    background-size: cover;
+}
+
+
+
+
+
 /***********************Section Call Him ***********************/
 
 .call-to-action {
@@ -411,35 +450,7 @@ div.container-slider{
     }
 }
 
-/*********************** Section Money ***********************/
 
-
-.money {
-    background: url('Images/dollar.jpg') no-repeat center;
-    background-size: cover;
-    height: 600px;
-}
-
-
-.money p {
-    color: #fab702;
-    font-size: 2em;
-    visibility: hidden;
-    text-align: center;
-    padding-top: 220px;
-    font-weight: 900;
-}
-
-
-.money:hover p {
-    visibility: visible;
-}
-
-
-.money:hover {
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Images/dollar.jpg') no-repeat center;
-    background-size: cover;
-}
 
 
 
@@ -775,7 +786,19 @@ body#team main .team ul {
 
 
 body#team main .team ul li {
-    margin-bottom: 3px;
+    margin-bottom: 5px;
+}
+
+
+body#team main .team ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1em;
+}
+
+
+body#team main .team ul li a:hover {
+    text-shadow: 1px 1px 2px #000000;
 }
 
 
@@ -820,6 +843,19 @@ body#contact {
 }
 
 
+#menu-icon, #contact-header #menu-icon {
+    display: none;
+    width: 40px;
+    height: 40px;
+    background: url(Images/list.png) center no-repeat;
+}
+
+
+body#contact main {
+    background: #fab702;
+}
+
+
 body#contact main form {
     width: 500px;
     max-width: 90%;
@@ -855,8 +891,8 @@ body#contact main form i {
 }
 
 
-body#contact main form .fa-chevron-left {
-    margin-right: 5px;
+body#contact main form .fa-chevron-right {
+    padding-left: 0;
 }
 
 
@@ -870,6 +906,8 @@ body#contact main form label span {
     display: inline-block;
     width: 100px;
     font-size: 1.1em;
+    text-align: right;
+    margin-right: 5px;
 }
 
 
@@ -882,6 +920,10 @@ body#contact main form label input {
     height: 25px;
     width: calc(100% - 110px);
     outline: none;
+    border-radius: 6px;
+    padding: 3px;
+    box-sizing: border-box;
+    border: none;
 }
 
 
@@ -890,6 +932,10 @@ body#contact main form label textarea {
     width: calc(100% - 110px);
     outline: none;
     resize: none;
+    border-radius: 7px;
+    padding: 3px;
+    box-sizing: border-box;
+    border: none;
 }
 
 
@@ -905,6 +951,8 @@ body#contact main .map-container h2 {
     body#contact main form label span {
         display: block;
         margin-bottom: 5px;
+        margin-right: 0;
+        text-align: left;
     }
 
     body#contact main form label input,
@@ -945,14 +993,6 @@ body#contact main .map-container #map {
     background-color: grey;
 }
 
-
-
-#menu-icon, #contact-header #menu-icon {
-    display: none;
-    width: 40px;
-    height: 40px;
-    background: url(Images/list.png) center no-repeat;
-}
 
 
 /*Header media queries*/
